@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus Finance — Financial Web App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="hero">
+    <div class="hero-content">
+      <img src="assets/logo.png" alt="Nexus Finance Logo" class="hero-logo" />
+      <h1>Nexus Finance</h1>
+      <p class="subtitle">La herramienta financiera moderna, segura y profesional</p>
+      <a href="#screens" class="btn-primary">Ver interfaz</a>
+    </div>
+  </header>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <h2>Por qué elegir <span class="gold">Nexus Finance</span></h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <h3>💼 Control Total</h3>
+        <p>Administra tus gastos, ingresos, nóminas y conciliaciones en una sola app.</p>
+      </div>
+      <div class="feature">
+        <h3>🔒 Seguridad</h3>
+        <p>Protege tus datos con PIN personalizable y autenticación segura en la nube.</p>
+      </div>
+      <div class="feature">
+        <h3>☁️ Sincronización</h3>
+        <p>Usa Firebase para guardar y acceder a tu información desde cualquier lugar.</p>
+      </div>
+      <div class="feature">
+        <h3>📄 Facturación Profesional</h3>
+        <p>Genera facturas y cotizaciones en PDF elegantes con tu marca.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOCKUP SECTION -->
+  <section id="screens" class="screens-section">
+    <h2>Interfaz <span class="gold">Clara</span> y <span class="gold">Profesional</span></h2>
+    <div class="screens">
+
+      <!-- Dashboard -->
+      <figure class="shot">
+        <svg viewBox="0 0 1600 900" class="mock">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#10141a"/>
+              <stop offset="100%" stop-color="#0e1217"/>
+            </linearGradient>
+            <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#C7A24B"/>
+              <stop offset="100%" stop-color="#8d6f2e"/>
+            </linearGradient>
+          </defs>
+          <rect width="1600" height="900" fill="url(#g1)"/>
+          <g transform="translate(60,60)">
+            <rect width="420" height="120" rx="16" fill="#0c1015" stroke="#1e242c"/>
+            <text x="24" y="46" fill="#A7AFB9" font-size="28">Ingresos (Mes)</text>
+            <text x="24" y="94" fill="#F2F3F5" font-size="44" font-weight="700">$ 20,000</text>
+            <g transform="translate(460,0)">
+              <rect width="420" height="120" rx="16" fill="#0c1015" stroke="#1e242c"/>
+              <text x="24" y="46" fill="#A7AFB9" font-size="28">Gastos (Mes)</text>
+              <text x="24" y="94" fill="#F2F3F5" font-size="44" font-weight="700">$ 7,520</text>
+            </g>
+            <g transform="translate(920,0)">
+              <rect width="420" height="120" rx="16" fill="#0c1015" stroke="#1e242c"/>
+              <text x="24" y="46" fill="#A7AFB9" font-size="28">Balance</text>
+              <text x="24" y="94" fill="#F2F3F5" font-size="44" font-weight="700">$ 12,480</text>
+            </g>
+          </g>
+          <g transform="translate(60,240)">
+            <rect width="1480" height="540" rx="18" fill="#0b0f14" stroke="#1e242c"/>
+            <g transform="translate(60,80)">
+              <rect width="120" height="320" x="0" y="140" fill="url(#bar)"/>
+              <rect width="120" height="420" x="180" y="40" fill="url(#bar)"/>
+              <rect width="120" height="260" x="360" y="200" fill="url(#bar)"/>
+              <rect width="120" height="360" x="540" y="100" fill="url(#bar)"/>
+            </g>
+            <text x="80" y="56" fill="#C7A24B" font-size="30" font-weight="700">Ingresos vs Gastos — últimos 12 meses</text>
+          </g>
+        </svg>
+        <figcaption>Dashboard</figcaption>
+      </figure>
+
+      <!-- Gastos/Ingresos -->
+      <figure class="shot">
+        <svg viewBox="0 0 1600 900" class="mock">
+          <rect width="1600" height="900" fill="#0B0D10"/>
+          <rect x="80" y="60" width="1440" height="780" rx="18" fill="#11161C"/>
+          <text x="120" y="140" fill="#C7A24B" font-size="34" font-weight="700">Gastos e Ingresos</text>
+          <rect x="120" y="180" width="1360" height="80" rx="10" fill="#141A21"/>
+          <text x="140" y="230" fill="#fff" font-size="26">Gasolina · Efectivo · $45.00</text>
+        </svg>
+        <figcaption>Gastos/Ingresos</figcaption>
+      </figure>
+
+      <!-- Facturas -->
+      <figure class="shot">
+        <svg viewBox="0 0 1600 900" class="mock">
+          <rect width="1600" height="900" fill="#0B0D10"/>
+          <text x="120" y="120" fill="#C7A24B" font-size="34" font-weight="700">Factura #INV-001</text>
+          <rect x="100" y="160" width="1400" height="600" rx="18" fill="#11161C" stroke="#1e242c"/>
+          <text x="160" y="230" fill="#fff" font-size="26">Cliente: Juan Pérez</text>
+          <text x="160" y="280" fill="#A7AFB9" font-size="22">Servicio técnico — $450.00</text>
+          <text x="160" y="640" fill="#C7A24B" font-size="26" font-weight="700">Total: $501.75</text>
+        </svg>
+        <figcaption>Facturas</figcaption>
+      </figure>
+
+      <!-- Conciliación -->
+      <figure class="shot">
+        <svg viewBox="0 0 1600 900" class="mock">
+          <rect width="1600" height="900" fill="#0B0D10"/>
+          <rect x="80" y="60" width="1440" height="780" rx="18" fill="#11161C"/>
+          <text x="120" y="140" fill="#C7A24B" font-size="34" font-weight="700">Conciliación Bancaria</text>
+          <text x="160" y="230" fill="#fff" font-size="26">Coincidencias: 38 | No encontradas: 5</text>
+        </svg>
+        <figcaption>Conciliación</figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <h2>Comienza con <span class="gold">Nexus Finance</span> hoy</h2>
+    <p>Optimiza tu negocio con una herramienta hecha para profesionales.</p>
+    <a href="#" class="btn-primary">Contactar</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Nexus Finance — Financial Web App by Nexus Tools PR</p>
+  </footer>
+
+</body>
+</html>
