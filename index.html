@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Nexus Finance — by Nexus Tools PR</title>
+  <meta name="description" content="Gestión financiera moderna: gastos, ingresos, facturación, cotizaciones, conciliación bancaria y PDFs. Oscuro + dorado.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="container row between">
+      <a href="#" class="brand">
+        <img src="assets/logo.png" alt="Nexus Finance" class="brand-logo">
+        <div class="brand-text">
+          <strong>Nexus Finance</strong>
+          <small>by Nexus Tools PR</small>
+        </div>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#features">Funciones</a>
+        <a href="#security">Seguridad</a>
+        <a href="#screens">Vistas</a>
+        <a href="#pricing">Planes</a>
+        <a href="#about">Sobre nosotros</a>
+        <a href="#contact" class="btn">Contacto</a>
+      </nav>
+      <button id="burger" class="burger" aria-label="Menú">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>Administra tus finanzas con <span class="gold">elegancia</span> y <span class="gold">precisión</span>.</h1>
+        <p class="lead">
+          Nexus Finance es una app web profesional para controlar gastos, ingresos, facturación, cotizaciones y conciliación bancaria con
+          exportación real a PDF y sincronización en la nube (Firebase).
+        </p>
+        <div class="cta">
+          <a href="../" class="btn primary">Probar la App</a>
+          <a href="#features" class="btn-outline">Ver funciones</a>
+        </div>
+        <ul class="hero-bullets">
+          <li>✔️ Gastos/Ingresos con referencia</li>
+          <li>✔️ Facturas y cotizaciones con PDF elegante</li>
+          <li>✔️ Conciliación bancaria con importación CSV</li>
+          <li>✔️ Login con PIN y botón Salir</li>
+        </ul>
+      </div>
+      <div class="hero-art">
+        <div class="glass">
+          <div class="kpi">
+            <span class="kpi-label">Balance (Mes)</span>
+            <span class="kpi-value">$ 12,480.00</span>
+          </div>
+          <div class="mini-cards">
+            <div class="mini">
+              <span class="mini-label">Ingresos</span>
+              <span class="mini-value">$ 20,000.00</span>
+            </div>
+            <div class="mini">
+              <span class="mini-label">Gastos</span>
+              <span class="mini-value">$ 7,520.00</span>
+            </div>
+          </div>
+          <div class="bars">
+            <div class="bar"><span style="width:80%"></span></div>
+            <div class="bar"><span style="width:35%"></span></div>
+            <div class="bar"><span style="width:60%"></span></div>
+          </div>
+          <p class="muted tiny">Vista ilustrativa</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="section">
+    <div class="container">
+      <h2>Todo lo que necesitas para tu <span class="gold">gestión financiera</span></h2>
+      <p class="section-lead">Multipanel, datos en localStorage + Firebase opcional, y PDFs limpios.</p>
+      <div class="grid3">
+        <div class="card feat">
+          <div class="icon">💸</div>
+          <h3>Gastos Diarios</h3>
+          <p>Registra fecha, categoría, método y referencia (cheque/ATH/tarjeta/transferencia). Subtotales por categoría y totales arriba.</p>
+        </div>
+        <div class="card feat">
+          <div class="icon">💰</div>
+          <h3>Entradas de Dinero</h3>
+          <p>Clientes, métodos, referencia y totales por método (efectivo, tarjeta, cheque, ATH móvil, transferencia).</p>
+        </div>
+        <div class="card feat">
+          <div class="icon">🧾</div>
+          <h3>Facturas & Cotizaciones</h3>
+          <p>Campos completos, logo, ítems con impuestos, totales calculados y PDF blanco/negro profesional.</p>
+        </div>
+        <div class="card feat">
+          <div class="icon">🏦</div>
+          <h3>Conciliación Bancaria</h3>
+          <p>Importa CSV de tu banco, hace matching, muestra coincidencias y no encontradas, y genera reporte PDF.</p>
+        </div>
+        <div class="card feat">
+          <div class="icon">🔐</div>
+          <h3>Login con PIN</h3>
+          <p>PIN inicial, intentos limitados, bloqueo y botón Salir para volver al login sin recargar.</p>
+        </div>
+        <div class="card feat">
+          <div class="icon">☁️</div>
+          <h3>Sincronización en la nube</h3>
+          <p>Google/Firebase opcional: guardar/cargar tu JSON y mantener equipos sincronizados.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seguridad -->
+  <section id="security" class="section alt">
+    <div class="container two">
+      <div>
+        <h2>Seguridad y control de acceso</h2>
+        <p>Tu información queda en tu navegador (localStorage) y, si activas la nube, se cifra en tránsito con Google OAuth y Firebase. Controla intentos de PIN, bloqueo y restablecimiento desde la Configuración.</p>
+        <ul class="checks">
+          <li>PIN con hash y bloqueo tras intentos fallidos</li>
+          <li>Google Sign-In opcional</li>
+          <li>Pantallas de PDF limpias, sin datos sensibles extra</li>
+        </ul>
+      </div>
+      <div class="shield-card">
+        <div class="lock">🔒</div>
+        <div>
+          <strong>Protección activa</strong>
+          <p class="muted">Cifrado TLS, dominio propio y mejores prácticas OWASP Frontend.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screens / Galería -->
+  <section id="screens" class="section">
+    <div class="container">
+      <h2>Interfaz <span class="gold">clara</span> y <span class="gold">profesional</span></h2>
+      <div class="screens">
+        <figure class="shot"><div class="ph"></div><figcaption>Dashboard</figcaption></figure>
+        <figure class="shot"><div class="ph"></div><figcaption>Gastos/Ingresos</figcaption></figure>
+        <figure class="shot"><div class="ph"></div><figcaption>Facturas</figcaption></figure>
+        <figure class="shot"><div class="ph"></div><figcaption>Conciliación</figcaption></figure>
+      </div>
+      <p class="muted tiny">Reemplaza los placeholders con capturas reales de tu app.</p>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="section alt">
+    <div class="container">
+      <h2>Planes simples</h2>
+      <div class="pricing">
+        <div class="price-card">
+          <h3>Gratis</h3>
+          <p class="muted">Uso local (sin nube)</p>
+          <div class="price">$0</div>
+          <ul>
+            <li>Gastos e Ingresos</li>
+            <li>Facturas / Cotizaciones</li>
+            <li>PDFs</li>
+          </ul>
+          <a href="../" class="btn">Empezar</a>
+        </div>
+        <div class="price-card featured">
+          <h3>Pro</h3>
+          <p class="muted">Con sincronización</p>
+          <div class="price">$9<span>/mes</span></div>
+          <ul>
+            <li>Todo del plan Gratis</li>
+            <li>Firebase Sync</li>
+            <li>Soporte priorizado</li>
+          </ul>
+          <a href="../" class="btn primary">Probar ahora</a>
+        </div>
+        <div class="price-card">
+          <h3>Empresas</h3>
+          <p class="muted">A medida</p>
+          <div class="price">Custom</div>
+          <ul>
+            <li>Dominio y branding</li>
+            <li>Capacitaciones</li>
+            <li>Integraciones</li>
+          </ul>
+          <a href="#contact" class="btn-outline">Solicitar demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container two">
+      <div>
+        <h2>Hecho por <span class="gold">Nexus Tools PR</span></h2>
+        <p>Somos un equipo apasionado por herramientas simples, rápidas y efectivas. Nexus Finance nació para resolver la administración financiera diaria con experiencia premium y sin curva de aprendizaje.</p>
+        <ul class="checks">
+          <li>UI/UX profesional</li>
+          <li>Código claro, 100% front-end</li>
+          <li>Mejoras continuas basadas en feedback</li>
+        </ul>
+      </div>
+      <div class="about-card">
+        <strong>¿Tienes ideas nuevas?</strong>
+        <p class="muted">Escríbenos y las convertimos en features reales.</p>
+        <a href="#contact" class="btn">Contactar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact" class="section alt">
+    <div class="container contact">
+      <h2>Contacto</h2>
+      <form id="contactForm" class="grid2">
+        <label>Nombre
+          <input type="text" id="cName" placeholder="Tu nombre" required>
+        </label>
+        <label>Email
+          <input type="email" id="cEmail" placeholder="tucorreo@dominio.com" required>
+        </label>
+        <label class="full">Mensaje
+          <textarea id="cMsg" rows="4" placeholder="¿Cómo podemos ayudarte?" required></textarea>
+        </label>
+        <div class="full">
+          <button class="btn">Enviar</button>
+          <small class="muted">No compartimos tu información con terceros.</small>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container row between">
+      <p class="muted">© <span id="year"></span> Nexus Finance — by Nexus Tools PR</p>
+      <div class="row g">
+        <a href="#features" class="muted">Funciones</a>
+        <a href="#about" class="muted">Sobre nosotros</a>
+        <a href="#contact" class="muted">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js?v=1"></script>
+</body>
+</html>
